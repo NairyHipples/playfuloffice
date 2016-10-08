@@ -1,2 +1,2 @@
-# playfuloffice
-Website for the book "Playful Office".
+# chronus
+Chronus official website
