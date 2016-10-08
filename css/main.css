@@ -195,7 +195,7 @@ textarea {
   text-shadow: 0px 0px 5px #000;
 }
 .book-img {
-  height: 200px;
+  height: 350px;
 }
 .img_container {
   margin-top: 0px;
@@ -235,6 +235,13 @@ textarea {
   font-size: 32px;
   height: 60px;
 }
+.buy:hover {
+  background-color: #BABABA;
+}
+.buy:focus {
+  background-color: #47BABD;
+  color: #fff;
+}
 /****** GLYPHICONS ******/
 .glyphicon {
   top: 2px;
@@ -242,8 +249,13 @@ textarea {
 .partialHeader .glyphicon {
   top: 0px;
 }
+.brandhome {
+  margin-top: 18px;
+  color: #AA814B;
+  font-size: 30px;
+}
 /******MEDIA-QUERIES******/
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .nav {
     font-size: 18px;
     font-family: 'Julius Sans One', sans-serif;
@@ -261,6 +273,12 @@ textarea {
     font-size: 20px;
   }
 }
+@media (max-width: 991px) {
+  .buy {
+    font-size: 25px;
+    height: 50px;
+  }
+}
 @media (max-width: 767px) {
   body {
     padding-top: 50px;
@@ -269,6 +287,11 @@ textarea {
     padding-top: 6px;
     padding-bottom: 0px;
     height: 50px;
+  }
+  .brandhome {
+    margin-top: 10px;
+    color: #AA814B;
+    font-size: 25px;
   }
   .nav {
     font-size: 25px;
@@ -283,5 +306,11 @@ textarea {
   }
   .info {
     border-bottom: 1px solid #BABABA;
+  }
+  .rowPost {
+    text-align: center;
+  }
+  .book-img {
+    height: 300px;
   }
 }
