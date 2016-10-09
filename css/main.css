@@ -133,6 +133,7 @@ p {
   text-align: center;
   height: 100%;
   margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 .jumbo-p {
   margin-top: 0px;
@@ -235,9 +236,11 @@ textarea {
   font-size: 32px;
   height: 60px;
 }
+.btn-default:hover,
 .buy:hover {
   background-color: #BABABA;
 }
+.btn-default:focus,
 .buy:focus {
   background-color: #47BABD;
   color: #fff;
@@ -283,13 +286,20 @@ textarea {
   body {
     padding-top: 50px;
   }
+  hr {
+    display: none;
+  }
+  footer {
+    margin-top: 20px;
+  }
   .navbar-brand {
     padding-top: 6px;
     padding-bottom: 0px;
+    padding-right: 0px;
     height: 50px;
   }
   .brandhome {
-    margin-top: 10px;
+    margin-top: 12px;
     color: #AA814B;
     font-size: 25px;
   }
@@ -312,5 +322,23 @@ textarea {
   }
   .book-img {
     height: 300px;
+  }
+  .phonePost {
+    border-bottom: 2px solid #AA814B;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 443px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 400px) {
+  .navbar-brand {
+    padding-top: 6px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    height: 50px;
+    width: 200px;
   }
 }
