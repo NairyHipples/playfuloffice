@@ -10,11 +10,11 @@ app.config(['$routeProvider', '$locationProvider',
     })
     .when('/play-inspiration', {
       templateUrl: 'app/partials/play-inspiration/play-inspiration.html',
-      controller: 'navController'
+      controller: 'playController'
     })
     .when('/book', {
       templateUrl: 'app/partials/book/book.html',
-      controller: 'searchController'
+      controller: 'bookController'
     })
     .when('/info', {
       templateUrl: 'app/partials/info/info.html',
@@ -26,10 +26,15 @@ app.config(['$routeProvider', '$locationProvider',
 }]);
 
 var controllers = {};
-controllers.searchController = function($scope) {
+controllers.bookController = function($scope) {
   $scope.books = [
     { name: 'Samuel West & Niklas Madsen', title: 'Playful Office', img: 'img/books/clockwork.jpg'}
 
+  ];
+};
+controllers.playController = function($scope){
+  $scope.plays = [
+    { title: 'Shoot your coworker during a meeting with a nerf gun to get his/her attention.'}
   ];
 };
 
