@@ -3,7 +3,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 @import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Averia+Sans+Libre|Covered+By+Your+Grace|Julius+Sans+One|Lato|Luckiest+Guy';
 /******GENERAL******/
+html {
+  height: 100%;
+  width: 100%;
+}
 body {
+  height: 100%;
+  width: 100%;
   padding-top: 70px;
   background-color: #ebebeb;
   font-family: 'Lato', sans-serif;
@@ -131,7 +137,6 @@ hr {
 .jumbotron {
   background-color: #fff;
   text-align: center;
-  height: 100%;
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
@@ -140,14 +145,12 @@ hr {
   color: #333;
   font-family: 'Averia Sans Libre', cursive;
 }
-.arrow {
+.arrow, .arrow:hover, .arrow:focus {
   text-decoration: none;
   font-size: 70px;
-  color: #E66F6F;
-}
-.arrow:hover {
-  color: #E66F6F;
-  cursor: default;
+  color: #AA814B;
+  cursor: pointer;
+
 }
 /******SEARCH FIELD******/
 .searchField {
@@ -171,19 +174,23 @@ textarea {
   border-bottom: 2px solid #AA814B;
 }
 /******SECTIONS******/
-
+.intro-section {
+  height: 100%;
+  padding-top: 120px;
+}
 .book-section {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  height: 100%;
+  padding-top: 250px;
 }
 .play-inspiration-section {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  height: 100%;
+  padding-top: 160px;
 
 }
 .info-section {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  height: 100%;
+  padding-top: 250px;
+
 
 }
 .album-img {

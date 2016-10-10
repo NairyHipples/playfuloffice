@@ -84,11 +84,12 @@
               <a target="_blank" href="https://twitter.com/"><img class="img-responsive social" src="img/logos/Twitter_Social_Icon_turquoise.png" alt="twlogo" /></a>
               <a target="_blank" href="https://www.instagram.com/"><img class="img-responsive social" src="img/logos/glyph-logo_May2016_turquoise.png" alt="iglogo" /></a>
               <br>
-              <a class="arrow"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+              <a  href="#book" class="arrow page-scroll"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
             </div>
           </div><!-- /img_container -->
         </div><!-- /container -->
       </div><!-- /jumbotron -->
+      <div class="banderoll"></div>
     </section>
 
 
@@ -102,8 +103,8 @@
     <!-- <div id="main">
       <div class="view_container" ng-view></div>
     </div> -->
-    <div class="banderoll"></div>
     <section id="book" class="book-section">
+      <div class="banderoll"></div>
       <div class="container page-container" ng-controller="bookController">
         <div class="row rowPost">
           <div class="col-sm-6 col-md-6 col-lg-6 bookDiv" data-ng-repeat="book in books | filter:filter.name | orderBy:'name'">
@@ -119,10 +120,12 @@
           </div><!-- /col -->
         </div><!-- /row & rowPost -->
       </div><!-- /container & page-container -->
+
+      <div class="banderoll"></div>
     </section>
-    <div class="banderoll"></div>
 
     <section id="play-inspiration" class="play-inspiration-section">
+      <div class="banderoll"></div>
       <div ng-controller="playController" class="container page-container">
         <div class="row rowPost">
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi1container">
@@ -148,11 +151,13 @@
           </div><!-- /col -->
         </div><!-- /row & rowPost -->
       </div>
+      <div class="banderoll"></div>
+
     </section>
 
-    <div class="banderoll"></div>
 
     <section id="info" class="info-section">
+      <div class="banderoll"></div>
 
       <div class="container page-container">
         <h1 class="partialHeader">Info</h1>
@@ -169,8 +174,8 @@
           <p>© 2016 Jonatan Östling.</p>
         </footer>
       </div><!-- /container & page-container -->
+      <div class="banderoll"></div>
     </section>
-    <div class="banderoll"></div>
 
     <!-- Latest minified jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
