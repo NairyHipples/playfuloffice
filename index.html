@@ -129,33 +129,35 @@
 
 
     <section id="play-inspiration" class="play-inspiration-section">
-      <div class="banderoll"></div>
-      <div ng-controller="playController" class="container">
-        <div class="row rowPost">
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi1container">
-            <div class="pi1" data-ng-repeat="play in plays | filter:filter.title | orderBy:'title'">
-              <h3>Play in the office!</h3>
-              <div class="divider"></div>
-              <p>{{ play.title }}</p>
-            </div>
-          </div><!-- /col -->
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi2container">
-            <div class="pi2">
-              <p>&quot;Our meetings sometimes tend to become routine and perhaps a little boring...</p>
-              <p>I wanted to shake things up a bit&quot;</p>
-            </div>
-          </div><!-- /col -->
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi3container">
-            <div class="pi3">
-              <div class="circle">
-                <p>&quot;playing<br>can buy you<br>an extra 10<br>years&quot;</p>
+      <div class="white">
+        <div class="banderoll"></div>
+        <div ng-controller="playController" class="container">
+          <div class="row rowPost">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi1container">
+              <div class="pi1" data-ng-repeat="play in plays | filter:filter.title | orderBy:'title'">
+                <h3>Play in the office!</h3>
+                <div class="divider"></div>
+                <p>{{ play.title }}</p>
               </div>
-              <p class="pi3p">Our brains need stimulation just as much as our bodies do, to stay healthy.</p>
-            </div>
-          </div><!-- /col -->
-        </div><!-- /row & rowPost -->
+            </div><!-- /col -->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi2container">
+              <div class="pi2">
+                <p>&quot;Our meetings sometimes tend to become routine and perhaps a little boring...</p>
+                <p>I wanted to shake things up a bit&quot;</p>
+              </div>
+            </div><!-- /col -->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi3container">
+              <div class="pi3">
+                <div class="circle">
+                  <p>&quot;playing<br>can buy you<br>an extra 10<br>years&quot;</p>
+                </div>
+                <p class="pi3p">Our brains need stimulation just as much as our bodies do, to stay healthy.</p>
+              </div>
+            </div><!-- /col -->
+          </div><!-- /row & rowPost -->
+        </div>
+        <div class="banderoll"></div>
       </div>
-      <div class="banderoll"></div>
     </section>
 
 
