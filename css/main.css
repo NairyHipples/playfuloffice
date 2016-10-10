@@ -513,7 +513,7 @@ textarea {
   .book-section,
   .play-inspiration-section,
   .info-section {
-    padding-top: 49px;
+    padding-top: 50px;
   }
 }
 @media (max-width: 556px) {
