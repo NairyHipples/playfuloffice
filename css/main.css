@@ -44,6 +44,9 @@ hr {
   border-top: none;
 }
 .bookDiv {
+
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
 }
 /******NAVBAR******/
@@ -250,8 +253,8 @@ textarea {
   width: 100%;
   background-image: url(../img/logos/Banner_vectorized.png);
   background-repeat: repeat-x;
-  background-size: 150px 50px;
-  height: 50px;
+  background-size: 105px 25px;
+  height: 25px;
 }
 #img-text {
   text-align: center;
@@ -267,7 +270,7 @@ textarea {
   margin-top: 0px;
 }
 .homelogo {
-  width: 800px;
+  width: 600px;
 }
 .img-thumbnail {
   max-height: 600px;
