@@ -173,16 +173,23 @@ textarea {
 }
 /******SECTIONS******/
 .end {
-  height: 100%;
+  height: 500px;
+}
+.intro-section {
+  height: 800px;
 }
 .book-section {
-  padding-top: 70px;
+  padding-top: 290px;
+  height: 800px;
 }
 .play-inspiration-section {
-  padding-top: 70px;
+  padding-top: 180px;
+  height: 800px;
 }
 .info-section {
-  padding-top: 70px;
+  padding-top: 300px;
+  height: 800px;
+
 }
 .album-img {
   max-width: 600px;
@@ -409,6 +416,9 @@ textarea {
   }
 }*/
 @media (max-width: 991px) {
+  .play-inspiration-section {
+    height: 1800px;
+  }
   .buy {
     font-size: 25px;
     height: 50px;
