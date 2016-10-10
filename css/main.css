@@ -212,7 +212,7 @@ textarea {
   font-size: 50px;
 }
 .pi1 {
-  margin-top: 150px;
+  margin-top: 80px;
   font-size: 36px;
   color: #fff;
   text-align: center;
@@ -224,7 +224,7 @@ textarea {
   background-color: #4C7A34;
 }
 .pi2 {
-  margin-top: 150px;
+  margin-top: 80px;
   font-family: 'Luckiest Guy', cursive;
   font-size: 36px;
   color: #FEF67F;
@@ -251,7 +251,7 @@ textarea {
 }
 .pi3container {
   height: 600px;
-  padding: 60px;
+  padding: 20px;
   background-color: #E66A6A;
 }
 .pi3p {
@@ -339,7 +339,7 @@ textarea {
   font-size: 30px;
 }
 /******MEDIA-QUERIES******/
-@media (max-width: 1660px) {
+/*@media (max-width: 1660px) {
   .pi3container {
     padding: 40px;
   }
@@ -366,7 +366,7 @@ textarea {
   .pi1 {
     margin-top: 100px;
   }
-}
+}*/
 @media (max-width: 1200px) {
   .nav {
     font-size: 18px;
@@ -403,11 +403,11 @@ textarea {
     margin-top: 80px;
   }
 }
-@media (max-width: 1061px) {
+/*@media (max-width: 1061px) {
   .pi2 {
     margin-top: 40px;
   }
-}
+}*/
 @media (max-width: 991px) {
   .buy {
     font-size: 25px;

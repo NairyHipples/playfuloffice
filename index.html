@@ -130,7 +130,7 @@
 
     <section id="play-inspiration" class="play-inspiration-section">
       <div class="banderoll"></div>
-      <div ng-controller="playController" >
+      <div ng-controller="playController" class="container">
         <div class="row rowPost">
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi1container">
             <div class="pi1" data-ng-repeat="play in plays | filter:filter.title | orderBy:'title'">
@@ -156,7 +156,6 @@
         </div><!-- /row & rowPost -->
       </div>
       <div class="banderoll"></div>
-
     </section>
 
 
@@ -180,7 +179,7 @@
           </footer>
         </div><!-- /container & page-container -->
         <div class="banderoll"></div>
-        
+
       </div>
     </section>
     <div class="end">
