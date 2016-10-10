@@ -13,7 +13,11 @@ $(function() {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
+<<<<<<< HEAD
         }, 1000, 'easeInOutExpo');
+=======
+        }, 1500, 'easeInOutExpo');
+>>>>>>> origin/gh-pages
         event.preventDefault();
     });
 });
