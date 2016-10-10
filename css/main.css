@@ -439,7 +439,7 @@ textarea {
 }
 @media (max-width: 767px) {
   body {
-    padding-top: 120px;
+    padding-top: 70px;
   }
   hr {
     display: none;
@@ -513,7 +513,7 @@ textarea {
   .book-section,
   .play-inspiration-section,
   .info-section {
-    padding-top: 49px;
+    /*padding-top: 49px;*/
   }
 }
 @media (max-width: 556px) {
