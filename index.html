@@ -27,65 +27,69 @@
 
     <title>Playful Office&trade;</title>
   </head>
-  <body>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <div class="navbar navbar-inverse navbar-fixed-top" ng-controller="navController">
       <div class="container">
         <div class="navbar-header"><!-- Wrapping the collapse menu in .navbar-header for Bootstrap v.3 -->
-          <a href="#/">
+          <a class="page-top" href="#home">
             <img title="Home" class="navbar-brand" src="img/logos/PlayfulOfficeLogoHoriz3.svg" alt="Playful Office Logo Horizontal" />
             <!-- <span class="glyphicon glyphicon-home brandhome"></span> -->
           </a>
 
-          <!-- <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+          <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button> -->
+          </button>
 
         </div><!-- /navbar-header -->
-        <div class="collapse collapse navbar-collapse navHeaderCollapse">
+        <div class="collapse collapse navbar-collapse navHeaderCollapse navbar-ex1-collapse">
 
-          <!-- <ul class="nav navbar-nav navbar-right">
-            <li ng-class="{active: isActive('/book')}">
-              <a href="#/book">Buy the Book</a>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden">
+                <a class="page-scroll" href="#page-top"></a>
             </li>
-            <li ng-class="{active: isActive('/play-inspiration')}">
-              <a id="p-i" href="#/play-inspiration">Play Inspiration</a>
+            <li>
+              <a class="page-scroll" href="#book">Buy the Book</a>
             </li>
-            <li ng-class="{active: isActive('/info')}">
-              <a class="info" href="#/info">Info</a>
+            <li>
+              <a id="p-i" class="page-scroll" href="#play-inspiration">Play Inspiration</a>
             </li>
-          </ul> -->
+            <li>
+              <a class="page-scroll" href="#info">Info</a>
+            </li>
+          </ul>
         </div>
       </div><!-- /container -->
     </div><!-- /navbar div -->
 
-    <div class="banderoll"></div>
-    <div class="jumbotron">
-      <div class="container">
-        <div class="img_container">
-          <a href="#/">
-            <img class="homelogo img-responsive center-block" src="img/logos/PlayfulOfficeLogo2.svg" alt="Playful Office Logo" />
-          </a><!-- /anchor -->
-          <div class="imgtextdiv">
-            <!-- <h1 id="img-text">bokfynd.nu</h1> -->
-            <p class='jumbo-p'>COMPANION FOR THE BOOK &quot;PLAYFUL OFFICE&quot;</p>
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+      <div class="banderoll"></div>
+      <div class="jumbotron">
+        <div class="container">
+          <div class="img_container">
+            <a>
+              <img class="homelogo img-responsive center-block" src="img/logos/PlayfulOfficeLogo2.svg" alt="Playful Office Logo" />
+            </a><!-- /anchor -->
+            <div class="imgtextdiv">
+              <!-- <h1 id="img-text">bokfynd.nu</h1> -->
+              <p class='jumbo-p'>COMPANION FOR THE BOOK &quot;PLAYFUL OFFICE&quot;</p>
 
-          </div>
-          <div class="karin">
-            <a target="_blank" href="https://www.facebook.com/"><img class="img-responsive social" src="img/logos/FB-f-Logo__turquoise_1024.png" alt="fblogo" /></a>
-            <a target="_blank" href="https://www.youtube.com/user/"><img class="img-responsive social" src="img/logos/YouTube_turquoise_color_icon.png" alt="ytlogo" /></a>
-            <a target="_blank" href="https://twitter.com/"><img class="img-responsive social" src="img/logos/Twitter_Social_Icon_turquoise.png" alt="twlogo" /></a>
-            <a target="_blank" href="https://www.instagram.com/"><img class="img-responsive social" src="img/logos/glyph-logo_May2016_turquoise.png" alt="iglogo" /></a>
-            <br>
-            <a class="arrow"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
-          </div>
-        </div><!-- /img_container -->
-      </div><!-- /container -->
-    </div><!-- /jumbotron -->
-
-
+            </div>
+            <div class="karin">
+              <a target="_blank" href="https://www.facebook.com/"><img class="img-responsive social" src="img/logos/FB-f-Logo__turquoise_1024.png" alt="fblogo" /></a>
+              <a target="_blank" href="https://www.youtube.com/user/"><img class="img-responsive social" src="img/logos/YouTube_turquoise_color_icon.png" alt="ytlogo" /></a>
+              <a target="_blank" href="https://twitter.com/"><img class="img-responsive social" src="img/logos/Twitter_Social_Icon_turquoise.png" alt="twlogo" /></a>
+              <a target="_blank" href="https://www.instagram.com/"><img class="img-responsive social" src="img/logos/glyph-logo_May2016_turquoise.png" alt="iglogo" /></a>
+              <br>
+              <a class="arrow"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+            </div>
+          </div><!-- /img_container -->
+        </div><!-- /container -->
+      </div><!-- /jumbotron -->
+    </section>
 
 
       <!-- <div class="input-group searchField">
@@ -98,54 +102,59 @@
     <!-- <div id="main">
       <div class="view_container" ng-view></div>
     </div> -->
-
     <div class="banderoll"></div>
-    <div ng-controller="playController" class="container page-container">
-      <div class="row rowPost">
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi1container">
-          <div class="pi1" data-ng-repeat="play in plays | filter:filter.title | orderBy:'title'">
-            <h3>Play in the office!</h3>
-            <div class="divider"></div>
-            <p>{{ play.title }}</p>
-          </div>
-        </div><!-- /col -->
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi2container">
-          <div class="pi2">
-            <p>&quot;Our meetings sometimes tend to become routine and perhaps a little boring...</p>
-            <p>I wanted to shake things up a bit&quot;</p>
-          </div>
-        </div><!-- /col -->
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi3container">
-          <div class="pi3">
-            <div class="circle">
-              <p>&quot;playing<br>can buy you<br>an extra 10<br>years&quot;</p>
+    <section id="book" class="book-section">
+      <div class="container page-container" ng-controller="bookController">
+        <div class="row rowPost">
+          <div class="col-sm-6 col-md-6 col-lg-6 bookDiv" data-ng-repeat="book in books | filter:filter.name | orderBy:'name'">
+            <!-- <h4 class="book-title"><strong>{{ book.title }}</strong></h4>
+            <p class="book-name">- {{ book.name }}</p> -->
+            <img class="img-responsive book-img center-block" data-ng-src="{{ book.img }}" alt="{{ book.name }}">
+
+          </div><!-- /bookDiv & col -->
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <h3>Playful Office&trade;</h3>
+            <p>A book that will help you change your workplace for good.</p>
+            <p><a target="_blank" href="https://www.amazon.com" class="btn btn-default buy" role="button">PURCHASE ON AMAZON <span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+          </div><!-- /col -->
+        </div><!-- /row & rowPost -->
+      </div><!-- /container & page-container -->
+    </section>
+    <div class="banderoll"></div>
+
+    <section id="play-inspiration" class="play-inspiration-section">
+      <div ng-controller="playController" class="container page-container">
+        <div class="row rowPost">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi1container">
+            <div class="pi1" data-ng-repeat="play in plays | filter:filter.title | orderBy:'title'">
+              <h3>Play in the office!</h3>
+              <div class="divider"></div>
+              <p>{{ play.title }}</p>
             </div>
-            <p class="pi3p">Our brains need stimulation just as much as our bodies do, to stay healthy.</p>
-          </div>
-        </div><!-- /col -->
-      </div><!-- /row & rowPost -->
-    </div>
+          </div><!-- /col -->
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi2container">
+            <div class="pi2">
+              <p>&quot;Our meetings sometimes tend to become routine and perhaps a little boring...</p>
+              <p>I wanted to shake things up a bit&quot;</p>
+            </div>
+          </div><!-- /col -->
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi3container">
+            <div class="pi3">
+              <div class="circle">
+                <p>&quot;playing<br>can buy you<br>an extra 10<br>years&quot;</p>
+              </div>
+              <p class="pi3p">Our brains need stimulation just as much as our bodies do, to stay healthy.</p>
+            </div>
+          </div><!-- /col -->
+        </div><!-- /row & rowPost -->
+      </div>
+    </section>
 
     <div class="banderoll"></div>
-    <!-- <div id="onPage-view-name">Buy the Book</div> -->
-    <div class="container page-container" ng-controller="bookController">
-      <div class="row rowPost">
-        <div class="col-sm-6 col-md-6 col-lg-6 bookDiv" data-ng-repeat="book in books | filter:filter.name | orderBy:'name'">
-          <!-- <h4 class="book-title"><strong>{{ book.title }}</strong></h4>
-          <p class="book-name">- {{ book.name }}</p> -->
-          <img class="img-responsive book-img center-block" data-ng-src="{{ book.img }}" alt="{{ book.name }}">
 
-        </div><!-- /bookDiv & col -->
-        <div class="col-sm-6 col-md-6 col-lg-6">
-          <h3>Playful Office&trade;</h3>
-          <p>A book that will help you change your workplace for good.</p>
-          <p><a target="_blank" href="https://www.amazon.com" class="btn btn-default buy" role="button">PURCHASE ON AMAZON <span class="glyphicon glyphicon-shopping-cart"></span></a></p>
-        </div><!-- /col -->
-      </div><!-- /row & rowPost -->
-    </div><!-- /container & page-container -->
-    <div class="banderoll"></div>
+    <section id="info" class="info-section">
 
-    <!-- <div id="onPage-view-name">Info</div> -->
+    </section>
     <div class="container page-container">
       <h1 class="partialHeader">Info</h1>
       <div class="row rowPost">
@@ -187,7 +196,9 @@
     <!-- Angular Nav Controller -->
     <script src="app/controllers/navController.js"></script>
     <script src="scripts/main.js"></script>
-    <script src="dist/clipboard.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="scripts/jquery.easing.min.js"></script>
+    <script src="scripts/scrolling-nav.js"></script>
     <!-- My JS file -->
     <!-- <script src="scripts/main.js"></script> -->
     <!-- Wheelzoom plugin -->

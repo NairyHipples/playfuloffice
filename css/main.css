@@ -7,6 +7,7 @@ body {
   padding-top: 70px;
   background-color: #ebebeb;
   font-family: 'Lato', sans-serif;
+  color: #000;
   font-size: 16px;
 }
 
@@ -171,6 +172,16 @@ textarea {
   border-bottom: 2px solid #AA814B;
 }
 /******SECTIONS******/
+
+.book-section {
+  padding-top: 70px;
+}
+.play-inspiration-section {
+  padding-top: 70px;
+}
+.info-section {
+  padding-top: 70px;
+}
 .album-img {
   max-width: 600px;
   margin: 0px auto;
