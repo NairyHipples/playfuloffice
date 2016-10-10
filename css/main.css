@@ -7,6 +7,7 @@ body {
   padding-top: 70px;
   background-color: #ebebeb;
   font-family: 'Lato', sans-serif;
+  color: #000;
   font-size: 16px;
 }
 
@@ -44,6 +45,9 @@ hr {
   border-top: none;
 }
 .bookDiv {
+
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
 }
 /******NAVBAR******/
@@ -53,10 +57,15 @@ hr {
   color: #E66F6F;
   line-height: 65px;
 }
+#b-b, #i-i {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #333;
+  font-size: 25px;
+  line-height: 70px;
+}
 .navbar-nav li a {
   line-height: 70px;
   height: 60px;
-  color: #000;
 }
 .navbar-inverse .navbar-nav>li>a {
   color: #000;
@@ -91,17 +100,11 @@ hr {
   padding-bottom: 0px;
 
 }
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
   color: #000;
+  background-color: #fff;
 }
-.navbar-inverse .navbar-nav .open .dropdown-menu>li.active>a,
-.navbar-inverse .navbar-nav .open .dropdown-menu>li.active>a:hover {
-  background-color: #DE9918;
-  color: #FFF;
-
-}
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
-  background-color: #EBEBEB;
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
   color: #000;
 }
 .navbar-inverse .navbar-nav>li>a:hover{
@@ -168,6 +171,21 @@ textarea {
   border-bottom: 2px solid #AA814B;
 }
 /******SECTIONS******/
+
+.book-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.play-inspiration-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+}
+.info-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+}
 .album-img {
   max-width: 600px;
   margin: 0px auto;
@@ -250,8 +268,8 @@ textarea {
   width: 100%;
   background-image: url(../img/logos/Banner_vectorized.png);
   background-repeat: repeat-x;
-  background-size: 150px 50px;
-  height: 50px;
+  background-size: 105px 25px;
+  height: 25px;
 }
 #img-text {
   text-align: center;
@@ -267,7 +285,7 @@ textarea {
   margin-top: 0px;
 }
 .homelogo {
-  width: 800px;
+  width: 600px;
 }
 .img-thumbnail {
   max-height: 600px;
@@ -338,6 +356,9 @@ textarea {
     width: 260px;
   }
   #p-i {
+    font-size: 20px;
+  }
+  #b-b, #i-i {
     font-size: 20px;
   }
   .circle {
@@ -416,6 +437,9 @@ textarea {
   }
   #p-i {
     font-size: 30px;
+  }
+  #b-b, #i-i {
+    font-size: 25px;
   }
   .info {
     border-bottom: 1px solid #BABABA;
