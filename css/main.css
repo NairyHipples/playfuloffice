@@ -174,7 +174,6 @@ textarea {
 
 .book-section {
   padding-top: 70px;
-<<<<<<< HEAD
   padding-bottom: 70px;
 }
 .play-inspiration-section {
@@ -186,14 +185,6 @@ textarea {
   padding-top: 70px;
   padding-bottom: 70px;
 
-=======
-}
-.play-inspiration-section {
-  padding-top: 70px;
-}
-.info-section {
-  padding-top: 70px;
->>>>>>> origin/gh-pages
 }
 .album-img {
   max-width: 600px;
