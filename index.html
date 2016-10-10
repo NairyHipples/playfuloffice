@@ -57,7 +57,7 @@
               <a id="p-i" class="page-scroll" href="#play-inspiration">Play Inspiration</a>
             </li>
             <li>
-              <a id="i-i" class="page-scroll" href="#info">Info</a>
+              <a id="i-i" class="page-scroll info" href="#info">Info</a>
             </li>
           </ul>
         </div>
@@ -88,8 +88,8 @@
             </div>
           </div><!-- /img_container -->
         </div><!-- /container -->
+        <div class="banderoll"></div>
       </div><!-- /jumbotron -->
-      <div class="banderoll"></div>
     </section>
 
 
@@ -103,30 +103,34 @@
     <!-- <div id="main">
       <div class="view_container" ng-view></div>
     </div> -->
-    <section id="book" class="book-section">
-      <div class="banderoll"></div>
-      <div class="container page-container" ng-controller="bookController">
-        <div class="row rowPost">
-          <div class="col-sm-6 col-md-6 col-lg-6 bookDiv" data-ng-repeat="book in books | filter:filter.name | orderBy:'name'">
-            <!-- <h4 class="book-title"><strong>{{ book.title }}</strong></h4>
-            <p class="book-name">- {{ book.name }}</p> -->
-            <img class="img-responsive book-img center-block" data-ng-src="{{ book.img }}" alt="{{ book.name }}">
+      <section id="book" class="book-section">
+        <div class="white">
+          <div class="banderoll"></div>
+          <div class="container page-container" ng-controller="bookController">
+            <div class="row rowPost">
+              <div class="col-sm-6 col-md-6 col-lg-6 bookDiv" data-ng-repeat="book in books | filter:filter.name | orderBy:'name'">
+                <!-- <h4 class="book-title"><strong>{{ book.title }}</strong></h4>
+                <p class="book-name">- {{ book.name }}</p> -->
+                <img class="img-responsive book-img center-block" data-ng-src="{{ book.img }}" alt="{{ book.name }}">
 
-          </div><!-- /bookDiv & col -->
-          <div class="col-sm-6 col-md-6 col-lg-6">
-            <h3>Playful Office&trade;</h3>
-            <p>A book that will help you change your workplace for good.</p>
-            <p><a target="_blank" href="https://www.amazon.com" class="btn btn-default buy" role="button">PURCHASE ON AMAZON <span class="glyphicon glyphicon-shopping-cart"></span></a></p>
-          </div><!-- /col -->
-        </div><!-- /row & rowPost -->
-      </div><!-- /container & page-container -->
+              </div><!-- /bookDiv & col -->
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                <h3>Playful Office&trade;</h3>
+                <p>A book that will help you change your workplace for good.</p>
+                <p><a target="_blank" href="https://www.amazon.com" class="btn btn-default buy" role="button">PURCHASE ON AMAZON <span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+              </div><!-- /col -->
+            </div><!-- /row & rowPost -->
+          </div><!-- /container & page-container -->
 
-      <div class="banderoll"></div>
-    </section>
+          <div class="banderoll"></div>
+        </div>
+      </section>
+
+
 
     <section id="play-inspiration" class="play-inspiration-section">
       <div class="banderoll"></div>
-      <div ng-controller="playController" class="container page-container">
+      <div ng-controller="playController" >
         <div class="row rowPost">
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi1container">
             <div class="pi1" data-ng-repeat="play in plays | filter:filter.title | orderBy:'title'">
@@ -157,26 +161,30 @@
 
 
     <section id="info" class="info-section">
-      <div class="banderoll"></div>
+      <div class="white">
+        <div class="banderoll"></div>
 
-      <div class="container page-container">
-        <h1 class="partialHeader">Info</h1>
-        <div class="row rowPost">
-          <div class="col-sm-12 col-md-12 col-lg-12 center">
-            <h3>BUSINESS</h3>
-            <p>For endorsement, interviews, merchandise, and artwork related questions and proposals, <strong>please use the e-mail address below.</strong></p>
-            <h2>playfuloffice@book.com</h2>
+        <div class="container page-container">
+          <h1 class="partialHeader">Info</h1>
+          <div class="row rowPost">
+            <div class="col-sm-12 col-md-12 col-lg-12 center">
+              <h3>BUSINESS</h3>
+              <p>For endorsement, interviews, merchandise, and artwork related questions and proposals, <strong>please use the e-mail address below.</strong></p>
+              <h2>playfuloffice@book.com</h2>
 
-          </div><!-- /col -->
-        </div><!-- /row & rowPost -->
-        <hr>
-        <footer>
-          <p>© 2016 Jonatan Östling.</p>
-        </footer>
-      </div><!-- /container & page-container -->
-      <div class="banderoll"></div>
+            </div><!-- /col -->
+          </div><!-- /row & rowPost -->
+          <hr>
+          <footer>
+            <p>© 2016 Jonatan Östling.</p>
+          </footer>
+        </div><!-- /container & page-container -->
+        <div class="banderoll"></div>
+      </div>
     </section>
+    <div class="end">
 
+    </div>
     <!-- Latest minified jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- AngularJS -->
