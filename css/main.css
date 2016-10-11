@@ -3,19 +3,23 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 @import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Averia+Sans+Libre|Covered+By+Your+Grace|Julius+Sans+One|Lato|Luckiest+Guy';
 /******GENERAL******/
+html {
+  height: 100%;
+  width: 100%;
+}
 body {
+  height: 100%;
+  width: 100%;
   padding-top: 70px;
-  background-color: #ebebeb;
+  background-color: #333;
   font-family: 'Lato', sans-serif;
   color: #000;
   font-size: 16px;
 }
-
 footer {
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
-
 h1, h2, h3, h4, h5 {
   font-family: 'Julius Sans One', sans-serif;
   color: #333;
@@ -29,6 +33,9 @@ hr {
   display: inline-block;
   padding: 10px;
 }
+.white {
+  background-color: #fff;
+}
 /*.yt {
   margin-left: 30px;
   width: 145px;
@@ -36,8 +43,8 @@ hr {
 .tw {
   width: 170px;
 }*/
-
 .karin {
+  padding-top: 30px;
   height: 200px;
 }
 .page-container {
@@ -45,7 +52,6 @@ hr {
   border-top: none;
 }
 .bookDiv {
-
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
@@ -57,10 +63,15 @@ hr {
   color: #E66F6F;
   line-height: 65px;
 }
+#b-b, #i-i {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #333;
+  font-size: 25px;
+  line-height: 70px;
+}
 .navbar-nav li a {
   line-height: 70px;
   height: 60px;
-  color: #000;
 }
 .navbar-inverse .navbar-nav>li>a {
   color: #000;
@@ -93,19 +104,12 @@ hr {
   height: 70px;
   padding-top: 6px;
   padding-bottom: 0px;
-
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #000;
+  background-color: #fff;
 }
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-  color: #000;
-}
-.navbar-inverse .navbar-nav .open .dropdown-menu>li.active>a,
-.navbar-inverse .navbar-nav .open .dropdown-menu>li.active>a:hover {
-  background-color: #DE9918;
-  color: #FFF;
-
-}
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
-  background-color: #EBEBEB;
   color: #000;
 }
 .navbar-inverse .navbar-nav>li>a:hover{
@@ -132,7 +136,6 @@ hr {
 .jumbotron {
   background-color: #fff;
   text-align: center;
-  height: 100%;
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
@@ -141,14 +144,11 @@ hr {
   color: #333;
   font-family: 'Averia Sans Libre', cursive;
 }
-.arrow {
+.arrow, .arrow:hover, .arrow:focus {
   text-decoration: none;
   font-size: 70px;
-  color: #E66F6F;
-}
-.arrow:hover {
-  color: #E66F6F;
-  cursor: default;
+  color: #AA814B;
+  cursor: pointer;
 }
 /******SEARCH FIELD******/
 .searchField {
@@ -172,15 +172,25 @@ textarea {
   border-bottom: 2px solid #AA814B;
 }
 /******SECTIONS******/
-
+.end {
+  height: 500px;
+}
+.intro-section {
+  height: 800px;
+  margin-top: 0px;
+}
 .book-section {
   padding-top: 70px;
+  height: 800px;
 }
 .play-inspiration-section {
   padding-top: 70px;
+  height: 800px;
 }
 .info-section {
   padding-top: 70px;
+  height: 800px;
+
 }
 .album-img {
   max-width: 600px;
@@ -253,12 +263,12 @@ textarea {
   background-color: #E66A6A;
 }
 .pi3p {
+  margin-top: 20px;
   font-size: 36px;
   color: #934848;
   text-shadow: 0px 0px 1px #000;
   text-align: center;
 }
-
 /******IMAGE RELATED******/
 .banderoll {
   width: 100%;
@@ -337,6 +347,34 @@ textarea {
   font-size: 30px;
 }
 /******MEDIA-QUERIES******/
+/*@media (max-width: 1660px) {
+  .pi3container {
+    padding: 40px;
+  }
+  .pi3p {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1603px) {
+  .pi2 {
+    margin-top: 120px;
+  }
+}
+@media (max-width: 1587px) {
+  .pi1 {
+    margin-top: 140px;
+  }
+}
+@media (max-width: 1437px){
+  .pi2 {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 1287px) {
+  .pi1 {
+    margin-top: 100px;
+  }
+}*/
 @media (max-width: 1200px) {
   .nav {
     font-size: 18px;
@@ -354,6 +392,9 @@ textarea {
   #p-i {
     font-size: 20px;
   }
+  #b-b, #i-i {
+    font-size: 20px;
+  }
   .circle {
     width: 250px;
     height: 250px;
@@ -364,13 +405,21 @@ textarea {
     background: #333;
   }
   .pi2 {
-    margin-top: 50px;
+    margin-top: 80px;
   }
   .pi1 {
-    margin-top: 65px;
+    margin-top: 80px;
   }
 }
+/*@media (max-width: 1061px) {
+  .pi2 {
+    margin-top: 40px;
+  }
+}*/
 @media (max-width: 991px) {
+  .play-inspiration-section {
+    height: 1800px;
+  }
   .buy {
     font-size: 25px;
     height: 50px;
@@ -431,6 +480,9 @@ textarea {
   #p-i {
     font-size: 30px;
   }
+  #b-b, #i-i {
+    font-size: 25px;
+  }
   .info {
     border-bottom: 1px solid #BABABA;
   }
@@ -468,6 +520,11 @@ textarea {
     line-height: 50px;
     text-align: center;
     background: #333;
+  }
+  .book-section,
+  .play-inspiration-section,
+  .info-section {
+    padding-top: 50px;
   }
 }
 @media (max-width: 556px) {

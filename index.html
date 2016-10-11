@@ -32,7 +32,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top" ng-controller="navController">
       <div class="container">
         <div class="navbar-header"><!-- Wrapping the collapse menu in .navbar-header for Bootstrap v.3 -->
-          <a class="page-top" href="#home">
+          <a class="page-scroll" href="#page-top">
             <img title="Home" class="navbar-brand" src="img/logos/PlayfulOfficeLogoHoriz3.svg" alt="Playful Office Logo Horizontal" />
             <!-- <span class="glyphicon glyphicon-home brandhome"></span> -->
           </a>
@@ -51,13 +51,13 @@
                 <a class="page-scroll" href="#page-top"></a>
             </li>
             <li>
-              <a class="page-scroll" href="#book">Buy the Book</a>
+              <a  id="b-b" class="page-scroll" href="#book">Buy the Book</a>
             </li>
             <li>
               <a id="p-i" class="page-scroll" href="#play-inspiration">Play Inspiration</a>
             </li>
             <li>
-              <a class="page-scroll" href="#info">Info</a>
+              <a id="i-i" class="page-scroll info" href="#info">Info</a>
             </li>
           </ul>
         </div>
@@ -84,10 +84,11 @@
               <a target="_blank" href="https://twitter.com/"><img class="img-responsive social" src="img/logos/Twitter_Social_Icon_turquoise.png" alt="twlogo" /></a>
               <a target="_blank" href="https://www.instagram.com/"><img class="img-responsive social" src="img/logos/glyph-logo_May2016_turquoise.png" alt="iglogo" /></a>
               <br>
-              <a class="arrow"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+              <a  href="#book" class="arrow page-scroll"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
             </div>
           </div><!-- /img_container -->
         </div><!-- /container -->
+        <div class="banderoll"></div>
       </div><!-- /jumbotron -->
     </section>
 
@@ -102,87 +103,90 @@
     <!-- <div id="main">
       <div class="view_container" ng-view></div>
     </div> -->
-    <div class="banderoll"></div>
-    <section id="book" class="book-section">
-      <div class="container page-container" ng-controller="bookController">
-        <div class="row rowPost">
-          <div class="col-sm-6 col-md-6 col-lg-6 bookDiv" data-ng-repeat="book in books | filter:filter.name | orderBy:'name'">
-            <!-- <h4 class="book-title"><strong>{{ book.title }}</strong></h4>
-            <p class="book-name">- {{ book.name }}</p> -->
-            <img class="img-responsive book-img center-block" data-ng-src="{{ book.img }}" alt="{{ book.name }}">
+      <section id="book" class="book-section">
+        <div class="white">
+          <div class="banderoll"></div>
+          <div class="container page-container" ng-controller="bookController">
+            <div class="row rowPost">
+              <div class="col-sm-6 col-md-6 col-lg-6 bookDiv" data-ng-repeat="book in books | filter:filter.name | orderBy:'name'">
+                <!-- <h4 class="book-title"><strong>{{ book.title }}</strong></h4>
+                <p class="book-name">- {{ book.name }}</p> -->
+                <img class="img-responsive book-img center-block" data-ng-src="{{ book.img }}" alt="{{ book.name }}">
 
-          </div><!-- /bookDiv & col -->
-          <div class="col-sm-6 col-md-6 col-lg-6">
-            <h3>Playful Office&trade;</h3>
-            <p>A book that will help you change your workplace for good.</p>
-            <p><a target="_blank" href="https://www.amazon.com" class="btn btn-default buy" role="button">PURCHASE ON AMAZON <span class="glyphicon glyphicon-shopping-cart"></span></a></p>
-          </div><!-- /col -->
-        </div><!-- /row & rowPost -->
-      </div><!-- /container & page-container -->
-    </section>
-    <div class="banderoll"></div>
+              </div><!-- /bookDiv & col -->
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                <h3>Playful Office&trade;</h3>
+                <p>A book that will help you change your workplace for good.</p>
+                <p><a target="_blank" href="https://www.amazon.com" class="btn btn-default buy" role="button">PURCHASE ON AMAZON <span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+              </div><!-- /col -->
+            </div><!-- /row & rowPost -->
+          </div><!-- /container & page-container -->
+
+          <div class="banderoll"></div>
+        </div>
+      </section>
+
+
 
     <section id="play-inspiration" class="play-inspiration-section">
-      <div ng-controller="playController" class="container page-container">
-        <div class="row rowPost">
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi1container">
-            <div class="pi1" data-ng-repeat="play in plays | filter:filter.title | orderBy:'title'">
-              <h3>Play in the office!</h3>
-              <div class="divider"></div>
-              <p>{{ play.title }}</p>
-            </div>
-          </div><!-- /col -->
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi2container">
-            <div class="pi2">
-              <p>&quot;Our meetings sometimes tend to become routine and perhaps a little boring...</p>
-              <p>I wanted to shake things up a bit&quot;</p>
-            </div>
-          </div><!-- /col -->
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi3container">
-            <div class="pi3">
-              <div class="circle">
-                <p>&quot;playing<br>can buy you<br>an extra 10<br>years&quot;</p>
+      <div class="white">
+        <div class="banderoll"></div>
+        <div ng-controller="playController" class="container">
+          <div class="row rowPost">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi1container">
+              <div class="pi1" data-ng-repeat="play in plays | filter:filter.title | orderBy:'title'">
+                <h3>Play in the office!</h3>
+                <div class="divider"></div>
+                <p>{{ play.title }}</p>
               </div>
-              <p class="pi3p">Our brains need stimulation just as much as our bodies do, to stay healthy.</p>
-            </div>
-          </div><!-- /col -->
-        </div><!-- /row & rowPost -->
+            </div><!-- /col -->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi2container">
+              <div class="pi2">
+                <p>&quot;Our meetings sometimes tend to become routine and perhaps a little boring...</p>
+                <p>I wanted to shake things up a bit&quot;</p>
+              </div>
+            </div><!-- /col -->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi3container">
+              <div class="pi3">
+                <div class="circle">
+                  <p>&quot;playing<br>can buy you<br>an extra 10<br>years&quot;</p>
+                </div>
+                <p class="pi3p">Our brains need stimulation just as much as our bodies do, to stay healthy.</p>
+              </div>
+            </div><!-- /col -->
+          </div><!-- /row & rowPost -->
+        </div>
+        <div class="banderoll"></div>
       </div>
     </section>
 
-    <div class="banderoll"></div>
 
     <section id="info" class="info-section">
+      <div class="white">
+        <div class="banderoll"></div>
 
+        <div class="container page-container">
+          <h1 class="partialHeader">Info</h1>
+          <div class="row rowPost">
+            <div class="col-sm-12 col-md-12 col-lg-12 center">
+              <h3>BUSINESS</h3>
+              <p>For endorsement, interviews, merchandise, and artwork related questions and proposals, <strong>please use the e-mail address below.</strong></p>
+              <h2>playfuloffice@book.com</h2>
+
+            </div><!-- /col -->
+          </div><!-- /row & rowPost -->
+          <hr>
+          <footer>
+            <p>© 2016 Jonatan Östling.</p>
+          </footer>
+        </div><!-- /container & page-container -->
+        <div class="banderoll"></div>
+
+      </div>
     </section>
-    <div class="container page-container">
-      <h1 class="partialHeader">Info</h1>
-      <div class="row rowPost">
+    <div class="end">
 
-        <div class="col-sm-12 col-md-12 col-lg-12 center">
-          <h3>BUSINESS</h3>
-          <ul>
-            <li><p>For endorsement, interviews, merchandise, and artwork related questions and proposals, <strong>please use the e-mail address below.</strong></p></li>
-          </ul>
-          <!-- <div>
-            <p><span class="glyphicon glyphicon-exclamation-sign pleasenote"></span>&nbsp;&nbsp;PLEASE NOTE!</p>
-            <p>The copy function isn't working properly for Safari users at this moment, <strong>please copy the e-mail address MANUALLY below.</strong></p>
-          </div> -->
-
-          <h2>playfuloffice@book.com</h2>
-
-
-
-        </div><!-- /col -->
-
-      </div><!-- /row & rowPost -->
-      <hr>
-      <footer>
-        <p>© 2016 Jonatan Östling.</p>
-      </footer>
-    </div><!-- /container & page-container -->
-    <div class="banderoll"></div>
-
+    </div>
     <!-- Latest minified jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- AngularJS -->
@@ -196,12 +200,8 @@
     <!-- Angular Nav Controller -->
     <script src="app/controllers/navController.js"></script>
     <script src="scripts/main.js"></script>
-    <!-- Scrolling Nav JavaScript -->
     <script src="scripts/jquery.easing.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
     <script src="scripts/scrolling-nav.js"></script>
-    <!-- My JS file -->
-    <!-- <script src="scripts/main.js"></script> -->
-    <!-- Wheelzoom plugin -->
-    <!-- <script src="scripts/wheelzoom/wheelzoom.js"></script> -->
   </body>
 </html>
