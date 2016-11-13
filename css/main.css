@@ -553,9 +553,12 @@ textarea {
   }
   #p-i {
     font-size: 25px;
+    line-height: 70px;
   }
   #b-b, #i-i {
     font-size: 25px;
+    line-height: 70px;
+    
   }
   .info {
     border-bottom: 1px solid #BABABA;
