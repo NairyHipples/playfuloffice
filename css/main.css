@@ -661,4 +661,10 @@ textarea {
   .pi1 {
     margin-top: 20px;
   }
+  .jumbotron {
+    height: 400px;
+  }
+  .intro-section {
+    height: 400px;
+  }
 }
