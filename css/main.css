@@ -551,6 +551,9 @@ textarea {
     background-color: #333;
     height: 70px;
   }
+  .parallax1 {
+    top:0
+  }
   #p-i {
     font-size: 25px;
     line-height: 70px;
@@ -558,7 +561,7 @@ textarea {
   #b-b, #i-i {
     font-size: 25px;
     line-height: 70px;
-    
+
   }
   .info {
     border-bottom: 1px solid #BABABA;
