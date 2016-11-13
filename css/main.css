@@ -57,16 +57,13 @@ hr {
   text-align: center;
 }
 /******NAVBAR******/
-#p-i {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 30px;
-  line-height: 65px;
-}
+
 #b-b, #p-i, #i-i {
   font-family: 'Julius Sans One', sans-serif;
   color: #fff;
   font-size: 25px;
-  line-height: 70px;
+  line-height: 45px;
+
 }
 .navbar-nav li a {
   line-height: 70px;
@@ -469,7 +466,7 @@ textarea {
   #b-b, #i-i {
     font-size: 20px;
     line-height: 45px;
-    
+
   }
   .circle {
     width: 250px;
