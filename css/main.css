@@ -609,6 +609,9 @@ textarea {
   .pi2 {
     margin-top: 80px;
   }
+  .jumbotron {
+    height: 400px;
+  }
 }
 @media (max-width: 501px) {
   .pi2 {
