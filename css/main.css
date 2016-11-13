@@ -602,7 +602,7 @@ textarea {
   .about-section,
   .info-section {
     padding-top: 50px;
-    top:0;
+    top:350px;
   }
 }
 @media (max-width: 556px) {
