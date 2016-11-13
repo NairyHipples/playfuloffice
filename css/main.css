@@ -10,7 +10,7 @@ html {
 body {
   height: 100%;
   width: 100%;
-  padding-top: 140px;
+  padding-top: 70px;
   background-color: #333;
   font-family: 'Lato', sans-serif;
   color: #000;
@@ -44,7 +44,7 @@ hr {
   width: 170px;
 }*/
 .karin {
-  padding-top: 30px;
+  padding-top: 70px;
   height: 200px;
 }
 .page-container {
@@ -58,14 +58,13 @@ hr {
 }
 /******NAVBAR******/
 #p-i {
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 30px;
-  color: #E66F6F;
   line-height: 65px;
 }
-#b-b, #i-i {
+#b-b, #p-i, #i-i {
   font-family: 'Julius Sans One', sans-serif;
-  color: #333;
+  color: #fff;
   font-size: 25px;
   line-height: 70px;
 }
@@ -83,17 +82,18 @@ hr {
 }
 .navbar {
   border: 0px;
+
 }
 .navbar-inverse {
-  background-color: #fff;
+  background-color: #333;
 }
 .navbar-collapse.in {
   overflow-y: visible;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-  border-bottom: 5px solid #AA814B;
+  border-bottom: 5px solid #98875E;
   color: #000;
-  background-color: #fff;
+  background-color: #333;
   font-weight: 800;
 }
 .navbar-inverse .navbar-nav>li>a {
@@ -106,14 +106,13 @@ hr {
   padding-bottom: 0px;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-  color: #000;
-  background-color: #fff;
+  background-color: #333;
 }
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
   color: #000;
 }
 .navbar-inverse .navbar-nav>li>a:hover{
-  background-color: #fff;
+  background-color: #333;
   color: #000;
   font-weight: 800;
 }
@@ -122,6 +121,7 @@ hr {
 }
 .navbar-toggle {
   background-color: #47BABD;
+  border: 0px;
 }
 .icon-bar {
   color: #eee;
@@ -138,6 +138,7 @@ hr {
   text-align: center;
   margin-bottom: 0px;
   padding-bottom: 0px;
+  height: 550px;
 }
 .jumbo-p {
   margin-top: 0px;
@@ -172,24 +173,80 @@ textarea {
   border-bottom: 2px solid #AA814B;
 }
 /******SECTIONS******/
+.parallax1 {
+    /* The image used */
+    background-image: url("../img/logos/IMAG0053bw.jpg");
+
+    /* Set a specific height */
+    height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+
+    /* The image used */
+    background-image: url("../img/logos/DSC_6900bw.jpg");
+
+    /* Set a specific height */
+    height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3 {
+
+    /* The image used */
+    background-image: url("../img/logos/keyboard-1395316bw.jpg");
+
+    /* Set a specific height */
+    height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax4 {
+
+    /* The image used */
+    background-image: url("../img/logos/book-01bw.jpg");
+
+    /* Set a specific height */
+    height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.adlbs {
+  background-color: #e81121;
+}
 .end {
-  height: 500px;
 }
 .intro-section {
-  height: 800px;
+  height: 550px;
 }
 .book-section {
-  padding-top: 290px;
-  height: 800px;
+  position: relative;
+  top: 180px;
 }
-.play-inspiration-section {
-  padding-top: 180px;
-  height: 800px;
+.about-section {
+  position: relative;
+  top: 250px;
 }
 .info-section {
-  padding-top: 300px;
-  height: 800px;
-
+  position: relative;
+  top: 150px;
 }
 .album-img {
   max-width: 600px;
@@ -226,6 +283,10 @@ textarea {
   text-shadow: 0px 0px 6px #000;
 }
 .pi2container {
+  /*background-image: url("../img/logos/pexels-photo-89860.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
   height: 600px;
   padding: 20px;
   background-color: #4C7A34;
@@ -320,17 +381,29 @@ textarea {
   font-size: 20px;
   outline: none;
 }
-.buy {
+.buy1 {
   font-size: 32px;
   height: 60px;
+  color: #232F3E;
+  background-color: #F3A847;
 }
-.btn-default:hover,
-.buy:hover {
+.buy1:hover {
   background-color: #BABABA;
 }
-.btn-default:focus,
-.buy:focus {
-  background-color: #47BABD;
+.buy1:focus {
+  background-color: #F3A847;
+  color: #232F3E;
+}
+.buy2 {
+  font-size: 32px;
+  height: 60px;
+  background-color: #e81121;
+}
+.buy2:hover {
+  background-color: #BABABA;
+}
+.buy2:focus {
+  background-color: #e81121;
   color: #fff;
 }
 /****** GLYPHICONS ******/
@@ -342,7 +415,7 @@ textarea {
 }
 .brandhome {
   margin-top: 18px;
-  color: #AA814B;
+  color: #47BABD;
   font-size: 30px;
 }
 /******MEDIA-QUERIES******/
@@ -416,7 +489,7 @@ textarea {
   }
 }*/
 @media (max-width: 991px) {
-  .play-inspiration-section {
+  .about-section {
     height: 1800px;
   }
   .buy {
@@ -465,6 +538,7 @@ textarea {
   }
   .brandhome {
     margin-top: 12px;
+    padding-left: 20px;
     color: #AA814B;
     font-size: 25px;
   }
@@ -487,6 +561,9 @@ textarea {
   }
   .rowPost {
     text-align: center;
+    -webkit-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+    box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
   }
   .book-img {
     height: 300px;
@@ -521,7 +598,7 @@ textarea {
     background: #333;
   }
   .book-section,
-  .play-inspiration-section,
+  .about-section,
   .info-section {
     padding-top: 50px;
   }

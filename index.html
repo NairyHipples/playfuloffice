@@ -33,8 +33,7 @@
       <div class="container">
         <div class="navbar-header"><!-- Wrapping the collapse menu in .navbar-header for Bootstrap v.3 -->
           <a class="page-scroll" href="#page-top">
-            <img title="Home" class="navbar-brand" src="img/logos/PlayfulOfficeLogoHoriz3.svg" alt="Playful Office Logo Horizontal" />
-            <!-- <span class="glyphicon glyphicon-home brandhome"></span> -->
+            <span class="glyphicon glyphicon-home brandhome"></span>
           </a>
 
           <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -54,7 +53,7 @@
               <a  id="b-b" class="page-scroll" href="#book">Buy the Book</a>
             </li>
             <li>
-              <a id="p-i" class="page-scroll" href="#play-inspiration">Play Inspiration</a>
+              <a id="p-i" class="page-scroll" href="#about">About</a>
             </li>
             <li>
               <a id="i-i" class="page-scroll info" href="#info">Info</a>
@@ -74,13 +73,12 @@
               <img class="homelogo img-responsive center-block" src="img/logos/PlayfulOfficeLogo2.svg" alt="Playful Office Logo" />
             </a><!-- /anchor -->
             <div class="imgtextdiv">
-              <!-- <h1 id="img-text">bokfynd.nu</h1> -->
-              <p class='jumbo-p'>COMPANION FOR THE BOOK &quot;PLAYFUL OFFICE&quot;</p>
+              <!-- <p class='jumbo-p'>COMPANION FOR THE BOOK &quot;PLAYFUL OFFICE&quot;</p> -->
 
             </div>
             <div class="karin">
               <a target="_blank" href="https://www.facebook.com/"><img class="img-responsive social" src="img/logos/FB-f-Logo__turquoise_1024.png" alt="fblogo" /></a>
-              <a target="_blank" href="https://www.youtube.com/user/"><img class="img-responsive social" src="img/logos/YouTube_turquoise_color_icon.png" alt="ytlogo" /></a>
+              <!-- <a target="_blank" href="https://www.youtube.com/user/"><img class="img-responsive social" src="img/logos/YouTube_turquoise_color_icon.png" alt="ytlogo" /></a> -->
               <a target="_blank" href="https://twitter.com/"><img class="img-responsive social" src="img/logos/Twitter_Social_Icon_turquoise.png" alt="twlogo" /></a>
               <a target="_blank" href="https://www.instagram.com/"><img class="img-responsive social" src="img/logos/glyph-logo_May2016_turquoise.png" alt="iglogo" /></a>
               <br>
@@ -88,10 +86,16 @@
             </div>
           </div><!-- /img_container -->
         </div><!-- /container -->
-        <div class="banderoll"></div>
+        <!-- <div class="banderoll"></div> -->
       </div><!-- /jumbotron -->
     </section>
 
+    <div class="parallax1">
+      <div id="book" class="book-section">
+
+      </div>
+    </div>
+    <section>
 
       <!-- <div class="input-group searchField">
       <input type="text" class="form-control" placeholder="Sök bland böcker..." ng-model="filter.name">
@@ -103,7 +107,6 @@
     <!-- <div id="main">
       <div class="view_container" ng-view></div>
     </div> -->
-      <section id="book" class="book-section">
         <div class="white">
           <div class="banderoll"></div>
           <div class="container page-container" ng-controller="bookController">
@@ -117,18 +120,25 @@
               <div class="col-sm-6 col-md-6 col-lg-6">
                 <h3>Playful Office&trade;</h3>
                 <p>A book that will help you change your workplace for good.</p>
-                <p><a target="_blank" href="https://www.amazon.com" class="btn btn-default buy" role="button">PURCHASE ON AMAZON <span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                <br>
+                <p><a target="_blank" href="https://www.amazon.com" class="btn btn-default buy1" role="button">PURCHASE ON AMAZON <span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                <br>
+                <p><a target="_blank" href="http://www.adlibris.com/se" class="btn btn-default buy2" role="button">PURCHASE ON ADLIBRIS <span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+
               </div><!-- /col -->
             </div><!-- /row & rowPost -->
           </div><!-- /container & page-container -->
 
-          <div class="banderoll"></div>
+          <!-- <div class="banderoll"></div> -->
         </div>
       </section>
 
 
-
-    <section id="play-inspiration" class="play-inspiration-section">
+    <div class="parallax2">
+      <div id="about" class="about-section">
+      </div>
+    </div>
+    <section>
       <div class="white">
         <div class="banderoll"></div>
         <div ng-controller="playController" class="container">
@@ -140,12 +150,17 @@
                 <p>{{ play.title }}</p>
               </div>
             </div><!-- /col -->
+            <!-- <div class="col-xs-12 col-sm-12 col-md-4 pi2containerimage">
+              <div class="pi2image">
+                <img src="" alt="" />
+              </div>
+            </div> -->
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi2container">
               <div class="pi2">
                 <p>&quot;Our meetings sometimes tend to become routine and perhaps a little boring...</p>
                 <p>I wanted to shake things up a bit&quot;</p>
               </div>
-            </div><!-- /col -->
+            </div>
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi3container">
               <div class="pi3">
                 <div class="circle">
@@ -156,12 +171,17 @@
             </div><!-- /col -->
           </div><!-- /row & rowPost -->
         </div>
-        <div class="banderoll"></div>
+        <!-- <div class="banderoll"></div> -->
       </div>
     </section>
 
 
-    <section id="info" class="info-section">
+    <div class="parallax3">
+      <div id="info" class="info-section">
+      </div>
+    </div>
+    <section>
+
       <div class="white">
         <div class="banderoll"></div>
 
@@ -180,11 +200,13 @@
             <p>© 2016 Jonatan Östling.</p>
           </footer>
         </div><!-- /container & page-container -->
-        <div class="banderoll"></div>
+        <!-- <div class="banderoll"></div> -->
 
       </div>
     </section>
     <div class="end">
+      <div class="parallax4"></div>
+
 
     </div>
     <!-- Latest minified jQuery -->
