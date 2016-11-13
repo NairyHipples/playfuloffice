@@ -492,7 +492,7 @@ textarea {
   .about-section {
     height: 1800px;
   }
-  .buy {
+  .buy1, .buy2 {
     font-size: 25px;
     height: 50px;
   }
