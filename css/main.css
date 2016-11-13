@@ -453,7 +453,7 @@ textarea {
     font-family: 'Julius Sans One', sans-serif;
   }
   .navbar-nav li a {
-      line-height: 68px;
+      line-height: 45px;
       height: 60px;
   }
   .navbar-brand {
@@ -551,7 +551,7 @@ textarea {
     height: 70px;
   }
   #p-i {
-    font-size: 30px;
+    font-size: 25px;
   }
   #b-b, #i-i {
     font-size: 25px;
