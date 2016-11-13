@@ -610,7 +610,10 @@ textarea {
     margin-top: 80px;
   }
   .jumbotron {
-    height: 400px;
+    height: 450px;
+  }
+  .intro-section {
+    height: 450px;
   }
 }
 @media (max-width: 501px) {
