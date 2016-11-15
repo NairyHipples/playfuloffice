@@ -35,6 +35,19 @@ hr {
 }
 .white {
   background-color: #fff;
+  -webkit-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+  padding-bottom: 40px;
+}
+.white2 {
+  background-color: #fff;
+  font-size: 20px;
+  -webkit-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+  padding-bottom: 40px;
+
 }
 /*.yt {
   margin-left: 30px;
@@ -47,6 +60,14 @@ hr {
   padding-top: 70px;
   height: 200px;
 }
+.karin span {
+  font-size: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.container {
+
+}
 .page-container {
   background-color: #fff;
   border-top: none;
@@ -57,13 +78,16 @@ hr {
   text-align: center;
 }
 /******NAVBAR******/
-
+#p-i {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 30px;
+  line-height: 65px;
+}
 #b-b, #p-i, #i-i {
   font-family: 'Julius Sans One', sans-serif;
   color: #fff;
   font-size: 25px;
-  line-height: 45px;
-
+  line-height: 70px;
 }
 .navbar-nav li a {
   line-height: 70px;
@@ -93,7 +117,7 @@ hr {
   background-color: #333;
   font-weight: 800;
 }
-{
+.navbar-inverse .navbar-nav>li>a {
   padding-top: 2px;
 }
 .navbar-brand {
@@ -135,7 +159,10 @@ hr {
   text-align: center;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  height: 550px;
+  height: 525px;
+  -webkit-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
 }
 .jumbo-p {
   margin-top: 0px;
@@ -232,6 +259,7 @@ textarea {
 }
 .intro-section {
   height: 550px;
+
 }
 .book-section {
   position: relative;
@@ -358,6 +386,10 @@ textarea {
   background-color: none;
   border-radius: 0px;
 }
+.infopic {
+  height: 300px;
+  margin-top: 20px;
+}
 .center {
   text-align: center;
 }
@@ -379,8 +411,8 @@ textarea {
   outline: none;
 }
 .buy1 {
-  font-size: 30px;
-  height: 54px;
+  font-size: 32px;
+  height: 60px;
   color: #232F3E;
   background-color: #F3A847;
 }
@@ -392,8 +424,8 @@ textarea {
   color: #232F3E;
 }
 .buy2 {
-  font-size: 30px;
-  height: 54px;
+  font-size: 32px;
+  height: 60px;
   background-color: #e81121;
 }
 .buy2:hover {
@@ -414,6 +446,27 @@ textarea {
   margin-top: 18px;
   color: #47BABD;
   font-size: 30px;
+}
+.glyphicon-scissors {
+  color: #e74c3c;
+}
+.glyphicon-briefcase {
+  color: #e67e22;
+}
+.glyphicon-sunglasses {
+  color: #333333;
+}
+.glyphicon-education {
+  color: #2980b9;
+}
+.glyphicon-glass {
+  color: #9b59b6;
+}
+.glyphicon-user {
+  color: #f1c40f;
+}
+.glyphicon-headphones {
+  color: #27ae60;
 }
 /******MEDIA-QUERIES******/
 /*@media (max-width: 1660px) {
@@ -460,13 +513,9 @@ textarea {
   }
   #p-i {
     font-size: 20px;
-    line-height: 45px;
-
   }
   #b-b, #i-i {
     font-size: 20px;
-    line-height: 45px;
-
   }
   .circle {
     width: 250px;
@@ -493,7 +542,7 @@ textarea {
   .about-section {
     height: 1800px;
   }
-  .buy1, .buy2 {
+  .buy {
     font-size: 25px;
     height: 50px;
   }
@@ -548,24 +597,27 @@ textarea {
   }
   .navbar-inverse .navbar-nav>li>a {
     padding-top: 0px;
-    background-color: #333;
+    background-color: #fff;
     height: 70px;
   }
   #p-i {
-    font-size: 25px;
-    line-height: 70px;
+    font-size: 30px;
   }
   #b-b, #i-i {
     font-size: 25px;
-    line-height: 70px;
-
   }
   .info {
     border-bottom: 1px solid #BABABA;
+
   }
   .rowPost {
     text-align: center;
+
   }
+  .karin span {
+    font-size: 40px;
+  }
+
   .book-img {
     height: 300px;
   }
@@ -602,18 +654,28 @@ textarea {
   .about-section,
   .info-section {
     padding-top: 50px;
-    top:350px;
+  }
+  .white {
+    padding-bottom: 0px;
+  }
+  .white2 {
+    box-shadow: none;
+    padding-bottom: 0px;
+  }
+  .page-container {
+    -webkit-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+    box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+  }
+  .jumbotron {
+    -webkit-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+    box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
   }
 }
 @media (max-width: 556px) {
   .pi2 {
     margin-top: 80px;
-  }
-  .jumbotron {
-    height: 480px;
-  }
-  .intro-section {
-    height: 480px;
   }
 }
 @media (max-width: 501px) {
@@ -624,12 +686,6 @@ textarea {
 @media (max-width: 451px) {
   .pi1 {
     margin-top: 40px;
-  }
-  .jumbotron {
-    height: 440px;
-  }
-  .intro-section {
-    height: 440px;
   }
 }
 @media (max-width: 443px) {
@@ -660,14 +716,5 @@ textarea {
 @media (max-width: 389px) {
   .pi1 {
     margin-top: 20px;
-  }
-  .jumbotron {
-    height: 400px;
-  }
-  .intro-section {
-    height: 400px;
-  }
-  .karin{
-    padding-top: 40px;
   }
 }
