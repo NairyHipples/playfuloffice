@@ -10,7 +10,7 @@ html {
 body {
   height: 100%;
   width: 100%;
-  padding-top: 70px;
+  padding-top: 95px;
   background-color: #333;
   font-family: 'Lato', sans-serif;
   color: #000;
@@ -78,14 +78,10 @@ hr {
   text-align: center;
 }
 /******NAVBAR******/
-#p-i {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 30px;
-  line-height: 65px;
-}
+
 #b-b, #p-i, #i-i {
-  font-family: 'Julius Sans One', sans-serif;
-  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  color: #333;
   font-size: 25px;
   line-height: 70px;
 }
@@ -106,15 +102,15 @@ hr {
 
 }
 .navbar-inverse {
-  background-color: #333;
+  background-color: #47BABD;
 }
 .navbar-collapse.in {
   overflow-y: visible;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-  border-bottom: 5px solid #98875E;
+  border-bottom: 5px solid #fff;
   color: #000;
-  background-color: #333;
+  background-color: #47BABD;
   font-weight: 800;
 }
 .navbar-inverse .navbar-nav>li>a {
@@ -127,13 +123,13 @@ hr {
   padding-bottom: 0px;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-  background-color: #333;
+  background-color: #47BABD;
 }
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
   color: #000;
 }
 .navbar-inverse .navbar-nav>li>a:hover{
-  background-color: #333;
+  background-color: #47BABD;
   color: #000;
   font-weight: 800;
 }
@@ -148,7 +144,7 @@ hr {
   color: #eee;
 }
 .navbar-inverse .navbar-toggle {
-    border-color: #eee;
+    border-color: #47BABD;
 }
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
   background-color: #47BABD;
@@ -159,7 +155,7 @@ hr {
   text-align: center;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  height: 525px;
+  height: 600px;
   -webkit-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
   box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
@@ -199,10 +195,10 @@ textarea {
 /******SECTIONS******/
 .parallax1 {
     /* The image used */
-    background-image: url("../img/logos/IMAG0053bw.jpg");
+    background-image: url("../img/logos/Anfal_Shamsudeen.jpg");
 
     /* Set a specific height */
-    height: 400px;
+    height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -258,7 +254,7 @@ textarea {
 .end {
 }
 .intro-section {
-  height: 550px;
+  height: 600px;
 
 }
 .book-section {
@@ -444,7 +440,7 @@ textarea {
 }
 .brandhome {
   margin-top: 18px;
-  color: #47BABD;
+  color: #333;
   font-size: 30px;
 }
 .glyphicon-scissors {
@@ -668,6 +664,7 @@ textarea {
     box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
   }
   .jumbotron {
+
     -webkit-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
     box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
