@@ -38,6 +38,7 @@ hr {
   -webkit-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
   box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 .white2 {
@@ -46,6 +47,7 @@ hr {
   -webkit-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
   box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
+  padding-top: 40px;
   padding-bottom: 40px;
 
 }
@@ -88,6 +90,9 @@ hr {
 .navbar-nav li a {
   line-height: 70px;
   height: 60px;
+}
+.navHeaderCollapse{
+  height: 218px;
 }
 .navbar-inverse .navbar-nav>li>a {
   color: #000;
@@ -139,12 +144,15 @@ hr {
 .navbar-toggle {
   background-color: #47BABD;
   border: 0px;
+  margin-top: 6px;
 }
-.icon-bar {
-  color: #eee;
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #333;
+  height: 4px;
+  width: 30px;
 }
 .navbar-inverse .navbar-toggle {
-    border-color: #47BABD;
+  border-color: #47BABD;
 }
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
   background-color: #47BABD;
@@ -152,18 +160,23 @@ hr {
 /******JUMBOTRON******/
 .jumbotron {
   background-color: #fff;
-  text-align: center;
   margin-bottom: 0px;
+  padding-top: 30px;
   padding-bottom: 0px;
   height: 600px;
   -webkit-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
   box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
 }
+.jumbotron p {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
 .jumbo-p {
-  margin-top: 0px;
+  font-family: 'Roboto Slab', serif;
   color: #333;
-  font-family: 'Averia Sans Libre', cursive;
+  margin-top: 0px;
 }
 .arrow, .arrow:hover, .arrow:focus {
   text-decoration: none;
@@ -372,7 +385,9 @@ textarea {
   margin-top: 0px;
 }
 .homelogo {
-  width: 600px;
+  width: 500px;
+
+  margin-bottom: 35px;
 }
 .img-thumbnail {
   max-height: 600px;
@@ -535,6 +550,9 @@ textarea {
   }
 }*/
 @media (max-width: 991px) {
+  .parallax1 {
+    background-image: url("../img/logos/Anfal_Shamsudeen2.jpg");
+  }
   .about-section {
     height: 1800px;
   }
@@ -567,6 +585,16 @@ textarea {
   }
 }
 @media (max-width: 767px) {
+  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    border-bottom: 0px;
+    color: #333;
+    background-color: #47BABD;
+    font-weight: 800;
+  }
+  .navbar-inverse .navbar-nav>li>a:hover{
+    background-color: #fff;
+    color: #333;
+  }
   body {
     padding-top: 50px;
   }
@@ -585,7 +613,7 @@ textarea {
   .brandhome {
     margin-top: 12px;
     padding-left: 20px;
-    color: #AA814B;
+    color: #333;
     font-size: 25px;
   }
   .nav {
@@ -596,15 +624,8 @@ textarea {
     background-color: #fff;
     height: 70px;
   }
-  #p-i {
-    font-size: 30px;
-  }
-  #b-b, #i-i {
+  #b-b, #p-i, #i-i {
     font-size: 25px;
-  }
-  .info {
-    border-bottom: 1px solid #BABABA;
-
   }
   .rowPost {
     text-align: center;
