@@ -392,6 +392,10 @@ textarea {
 .book-img {
   height: 350px;
 }
+.bookPic {
+  height: 500px;
+  padding-top: 10px;
+}
 .img_container {
   margin-top: 0px;
 }
@@ -413,6 +417,15 @@ textarea {
 }
 .center {
   text-align: center;
+}
+.pocertified {
+  position: relative;
+  height: 250px;
+  bottom: 130px;
+  left: 450px;
+  -ms-transform: rotate(18deg); /* IE 9 */
+  -webkit-transform: rotate(18deg); /* Chrome, Safari, Opera */
+  transform: rotate(18deg);
 }
 /****** BUTTONS ******/
 .btn:focus {
