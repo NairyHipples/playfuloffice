@@ -212,7 +212,7 @@ textarea {
 /******SECTIONS******/
 .parallax1 {
     /* The image used */
-    background-image: url("../img/logos/Anfal_Shamsudeen3.jpg");
+    background-image: url("../img/logos/Anfal_Shamsudeen50.jpg");
 
     /* Set a specific height */
     height: 500px;
@@ -226,10 +226,10 @@ textarea {
 .parallax2 {
 
     /* The image used */
-    background-image: url("../img/logos/DSC_6900bw.jpg");
+    background-image: url("../img/logos/270H30.jpg");
 
     /* Set a specific height */
-    height: 400px;
+    height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -240,14 +240,14 @@ textarea {
 .parallax3 {
 
     /* The image used */
-    background-image: url("../img/logos/keyboard-1395316bw.jpg");
+    background-image: url("../img/logos/281H50.jpg");
 
     /* Set a specific height */
-    height: 400px;
+    height: 900px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -283,7 +283,7 @@ textarea {
 }
 .info-section {
   position: relative;
-  top: 150px;
+  height: 800px;
 }
 .album-img {
   max-width: 600px;
