@@ -61,11 +61,12 @@
           </ul>
         </div>
       </div><!-- /container -->
-      <div class="banderoll"></div>
+      <div class="banderoll2"></div>
     </div><!-- /navbar div -->
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
+      <div class="banderoll"></div>
       <div class="jumbotron">
         <div class="container">
           <div class="row rowPost">
@@ -75,6 +76,14 @@
                   <img class="homelogo img-responsive center-block" src="img/logos/PlayfulOfficeLogo4.png" alt="Playful Office Logo" />
                 </a><!-- /anchor -->
                 <div class="imgtextdiv">
+                  <div class="karin">
+                    <a target="_blank" href="https://www.facebook.com/"><img class="img-responsive social" src="img/logos/FB-f-Logo__turquoise_1024.png" alt="fblogo" /></a>
+                    <!-- <a target="_blank" href="https://www.youtube.com/user/"><img class="img-responsive social" src="img/logos/YouTube_turquoise_color_icon.png" alt="ytlogo" /></a> -->
+                    <a target="_blank" href="https://twitter.com/"><img class="img-responsive social" src="img/logos/Twitter_Social_Icon_turquoise.png" alt="twlogo" /></a>
+                    <a target="_blank" href="https://www.instagram.com/"><img class="img-responsive social" src="img/logos/glyph-logo_May2016_turquoise.png" alt="iglogo" /></a>
+                    <!-- <br> -->
+                    <!-- <a  href="#book" class="arrow page-scroll"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a> -->
+                  </div>
                   <p class='jumbo-p'>
                     The Playful Office philosophy is developed by doctors, scientific researchers, psychologists, interior designers, product developers, artists, architects, philosophers, horticulturists, computer technicians, nerds and programmers with many years of experience.
                   </p>
@@ -84,20 +93,15 @@
 
 
                 </div>
-                <div class="karin">
-                  <!-- <a target="_blank" href="https://www.facebook.com/"><img class="img-responsive social" src="img/logos/FB-f-Logo__turquoise_1024.png" alt="fblogo" /></a> -->
-                  <!-- <a target="_blank" href="https://www.youtube.com/user/"><img class="img-responsive social" src="img/logos/YouTube_turquoise_color_icon.png" alt="ytlogo" /></a> -->
-                  <!-- <a target="_blank" href="https://twitter.com/"><img class="img-responsive social" src="img/logos/Twitter_Social_Icon_turquoise.png" alt="twlogo" /></a> -->
-                  <!-- <a target="_blank" href="https://www.instagram.com/"><img class="img-responsive social" src="img/logos/glyph-logo_May2016_turquoise.png" alt="iglogo" /></a> -->
-                  <!-- <br> -->
-                  <!-- <a  href="#book" class="arrow page-scroll"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a> -->
-                </div>
               </div><!-- /img_container -->
             </div><!-- /col -->
             <div class="col-sm-6 col-md-6 col-lg-6">
               <img class="bookPic" src="" alt="" />
             </div><!-- /col -->
           </div><!-- /row -->
+          <div class="karin2">
+            <a  href="#book" class="arrow page-scroll"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+          </div>
         </div><!-- /container -->
         <!-- <div class="banderoll"></div> -->
       </div><!-- /jumbotron -->
@@ -121,7 +125,7 @@
       <div class="view_container" ng-view></div>
     </div> -->
         <div class="white">
-          <!-- <div class="banderoll"></div> -->
+          <div class="banderoll"></div>
           <div class="container page-container" ng-controller="bookController">
             <div class="row rowPost">
               <div class="col-sm-6 col-md-6 col-lg-6 bookDiv" data-ng-repeat="book in books | filter:filter.name | orderBy:'name'">

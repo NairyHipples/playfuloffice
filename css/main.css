@@ -1,7 +1,8 @@
 /******IMPORTS******/
+
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
-@import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Averia+Sans+Libre|Covered+By+Your+Grace|Julius+Sans+One|Lato|Luckiest+Guy';
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface|Averia+Sans+Libre|Covered+By+Your+Grace|Julius+Sans+One|Lato|Luckiest+Guy|Libre+Baskerville);
 /******GENERAL******/
 html {
   height: 100%;
@@ -10,9 +11,9 @@ html {
 body {
   height: 100%;
   width: 100%;
-  padding-top: 95px;
+  padding-top: 70px;
   background-color: #333;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Libre Baskerville', serif;
   color: #000;
   font-size: 16px;
 }
@@ -29,7 +30,7 @@ hr {
 }
 /******CONTAINER******/
 .social {
-  height: 60px;
+  height: 45px;
   display: inline-block;
   padding: 10px;
 }
@@ -38,7 +39,6 @@ hr {
   /*-webkit-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);
   box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);*/
-  padding-top: 40px;
   padding-bottom: 40px;
 }
 .white2 {
@@ -59,8 +59,12 @@ hr {
   width: 170px;
 }*/
 .karin {
-  padding-top: 70px;
-  height: 200px;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.karin2 {
+  text-align: center;
 }
 .karin span {
   font-size: 60px;
@@ -82,9 +86,9 @@ hr {
 /******NAVBAR******/
 
 #b-b, #p-i, #i-i {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Libre Baskerville', serif;
   color: #333;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 70px;
 }
 .navbar-nav li a {
@@ -174,7 +178,7 @@ hr {
   margin-bottom: 30px;
 }
 .jumbo-p {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Libre Baskerville', serif;
   color: #333;
   margin-top: 0px;
 }
@@ -208,7 +212,7 @@ textarea {
 /******SECTIONS******/
 .parallax1 {
     /* The image used */
-    background-image: url("../img/logos/Anfal_Shamsudeen.jpg");
+    background-image: url("../img/logos/Anfal_Shamsudeen3.jpg");
 
     /* Set a specific height */
     height: 500px;
@@ -268,11 +272,10 @@ textarea {
 }
 .intro-section {
   height: 600px;
-
 }
 .book-section {
   position: relative;
-  top: 180px;
+  top: 430px;
 }
 .about-section {
   position: relative;
@@ -371,6 +374,14 @@ textarea {
   background-size: 105px 25px;
   height: 25px;
 }
+.banderoll2 {
+  width: 100%;
+  background-image: url(../img/logos/Banner_vectorized.png);
+  background-repeat: repeat-x;
+  background-size: 105px 25px;
+  height: 25px;
+  display: none;
+}
 #img-text {
   text-align: center;
   font-size: 4em;
@@ -386,8 +397,7 @@ textarea {
 }
 .homelogo {
   width: 500px;
-
-  margin-bottom: 35px;
+  margin-bottom: 10px;
 }
 .img-thumbnail {
   max-height: 600px;
@@ -522,11 +532,8 @@ textarea {
     padding-bottom: 0px;
     width: 260px;
   }
-  #p-i {
-    font-size: 20px;
-  }
-  #b-b, #i-i {
-    font-size: 20px;
+  #b-b, #p-i, #i-i {
+    font-size: 16px;
   }
   .circle {
     width: 250px;
@@ -590,6 +597,20 @@ textarea {
     color: #333;
     background-color: #47BABD;
     font-weight: 800;
+  }
+  .banderoll2 {
+    width: 100%;
+    background-image: url(../img/logos/Banner_vectorized.png);
+    background-repeat: repeat-x;
+    background-size: 105px 25px;
+    height: 25px;
+    display: block;
+  }
+  .banderoll {
+    display: none;
+  }
+  .homelogo {
+    padding-top: 10px;
   }
   .navbar-inverse .navbar-nav>li>a:hover{
     background-color: #fff;
@@ -667,7 +688,9 @@ textarea {
     text-align: center;
     background: #333;
   }
-  .book-section,
+  .book-section {
+    top: 425px;
+  }
   .about-section,
   .info-section {
     padding-top: 50px;
