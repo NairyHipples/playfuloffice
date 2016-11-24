@@ -6,4 +6,7 @@ $(document).ready(function() {
     $('.navHeaderCollapse').collapse('hide');
   });
 
+  setTimeout(function(){
+    $('body').addClass('loaded');
+  }, 1500);
 }); // end DOC ready
