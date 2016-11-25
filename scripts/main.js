@@ -8,5 +8,5 @@ $(document).ready(function() {
 
   setTimeout(function(){
     $('body').addClass('loaded');
-  }, 1500);
+  }, 0);
 }); // end DOC ready
