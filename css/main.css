@@ -420,13 +420,13 @@ textarea {
 .intro-section {
   height: 600px;
 }
-.book-section {
+.contact-section {
   position: relative;
   top: 430px;
 }
 .about-section {
   position: relative;
-  top: 250px;
+  top: 474px;
 }
 .info-section {
   position: relative;
@@ -541,7 +541,7 @@ textarea {
 }
 .bookPic {
   height: 500px;
-  padding-top: 10px;
+  /*padding-top: 10px;*/
 }
 .img_container {
   margin-top: 0px;
@@ -592,9 +592,16 @@ textarea {
   font-size: 20px;
   outline: none;
 }
+.buyDiv {
+  text-align: center;
+  padding-top: 10px;
+}
+.clearFix {
+  clear: both;
+}
 .buy1 {
-  font-size: 32px;
-  height: 60px;
+  font-size: 20px;
+  height: 40px;
   color: #232F3E;
   background-color: #F3A847;
 }
@@ -606,8 +613,9 @@ textarea {
   color: #232F3E;
 }
 .buy2 {
-  font-size: 32px;
-  height: 60px;
+  font-size: 20px;
+  height: 40px;
+  color: #FFF;
   background-color: #e81121;
 }
 .buy2:hover {
@@ -679,10 +687,29 @@ textarea {
     margin-top: 100px;
   }
 }*/
+@media (max-width: 1367px) {
+  .jumbotron p {
+    font-size: 13px;
+  }
+  .homelogo {
+    width: 320px;
+  }
+  #b-b, #p-i, #i-i {
+    font-size: 16px;
+  }
+  .bookPic {
+    height: 385px;
+  }
+  .intro-section {
+    height: 475px;
+  }
+  .jumbotron {
+    height: 450px;
+  }
+}
 @media (max-width: 1200px) {
   .nav {
     font-size: 18px;
-    font-family: 'Julius Sans One', sans-serif;
   }
   .navbar-nav li a {
       line-height: 68px;
@@ -867,7 +894,7 @@ textarea {
     text-align: center;
     background: #333;
   }
-  .book-section {
+  .contact-section {
     top: 425px;
   }
   .about-section,

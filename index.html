@@ -55,13 +55,13 @@
                 <a class="page-scroll" href="#page-top"></a>
             </li>
             <li>
-              <a  id="b-b" class="page-scroll" href="#book">BUY THE BOOK</a>
-            </li>
-            <li>
               <a id="p-i" class="page-scroll" href="#about">WHAT IS THIS?</a>
             </li>
             <li>
               <a id="i-i" class="page-scroll info" href="http://playfuloffice.com/">PLAYFUL SHOP</a>
+            </li>
+            <li>
+              <a  id="b-b" class="page-scroll" href="#contact">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -95,13 +95,18 @@
                   <p class="jumbo-p">
                     Playful Office is not some wild guess or some random prediction. This is a well compiled collection of research, observations, interviews and a whole lot of experience. This is happening now, as you are reading this, this is the future.
                   </p>
+                  <div class="buyDiv">
+                    <a target="_blank" href="https://www.amazon.com" class="btn btn-default buy1" role="button">BUY ON AMAZON&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <a target="_blank" href="http://www.adlibris.com/se" class="btn btn-default buy2" role="button">BUY ON ADLIBRIS&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- <br class="clearFix"> -->
+                  </div>
 
 
                 </div>
               </div><!-- /img_container -->
             </div><!-- /col -->
             <div class="col-sm-6 col-md-6 col-lg-6 center">
-              <img class="bookPic" src="img/logos/B00140932.jpg" alt="" />
+              <img class="bookPic" src="img/logos/MockUp-Book2.png" alt="" />
             </div><!-- /col -->
           </div><!-- /row -->
           <!-- <div class="center">
@@ -117,7 +122,7 @@
 
     <div class="parallax1">
       <p class="p1-p">&quot;When you share a laugh with someone, you are mirroring that person, their body language and neural activity.&quot;</p>
-      <div id="book" class="book-section">
+      <div id="about" class="about-section">
 
       </div>
     </div>
@@ -135,25 +140,36 @@
     </div> -->
         <div class="white">
           <div class="banderoll"></div>
-          <div class="container page-container" ng-controller="bookController">
+          <div ng-controller="playController" class="container">
             <div class="row rowPost">
-              <div class="col-sm-6 col-md-6 col-lg-6 bookDiv">
-                <!-- <h4 class="book-title"><strong>{{ book.title }}</strong></h4>
-                <p class="book-name">- {{ book.name }}</p> -->
-                <img class="img-responsive book-img center-block" src="img/logos/pocover.png" alt="Playful Office book">
-
-              </div><!-- /bookDiv & col -->
-              <div class="col-sm-6 col-md-6 col-lg-6">
-                <h3>Playful Office&trade;</h3>
-                <p>A book that will help you change your workplace for good.</p>
-                <br>
-                <p><a target="_blank" href="https://www.amazon.com" class="btn btn-default buy1" role="button">PURCHASE ON AMAZON <span class="glyphicon glyphicon-shopping-cart"></span></a></p>
-                <br>
-                <p><a target="_blank" href="http://www.adlibris.com/se" class="btn btn-default buy2" role="button">PURCHASE ON ADLIBRIS <span class="glyphicon glyphicon-shopping-cart"></span></a></p>
-
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi1container">
+                <div class="pi1" data-ng-repeat="play in plays | filter:filter.title | orderBy:'title'">
+                  <h3>Play in the office!</h3>
+                  <div class="divider"></div>
+                  <p>{{ play.title }}</p>
+                </div>
+              </div><!-- /col -->
+              <!-- <div class="col-xs-12 col-sm-12 col-md-4 pi2containerimage">
+                <div class="pi2image">
+                  <img src="" alt="" />
+                </div>
+              </div> -->
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi2container">
+                <div class="pi2">
+                  <p>&quot;Our meetings sometimes tend to become routine and perhaps a little boring...</p>
+                  <p>I wanted to shake things up a bit&quot;</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi3container">
+                <div class="pi3">
+                  <div class="circle">
+                    <p>&quot;playing<br>can buy you<br>an extra 10<br>years&quot;</p>
+                  </div>
+                  <p class="pi3p">Our brains need stimulation just as much as our bodies do, to stay healthy.</p>
+                </div>
               </div><!-- /col -->
             </div><!-- /row & rowPost -->
-          </div><!-- /container & page-container -->
+          </div>
 
           <!-- <div class="banderoll"></div> -->
         </div>
@@ -161,42 +177,29 @@
 
 
     <div class="parallax2">
-      <div id="about" class="about-section">
+      <div id="contact" class="contact-section">
       </div>
     </div>
     <section>
       <div class="white">
-        <!-- <div class="banderoll"></div> -->
-        <div ng-controller="playController" class="container">
+        <div class="banderoll"></div>
+        <div class="container page-container" ng-controller="bookController">
           <div class="row rowPost">
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi1container">
-              <div class="pi1" data-ng-repeat="play in plays | filter:filter.title | orderBy:'title'">
-                <h3>Play in the office!</h3>
-                <div class="divider"></div>
-                <p>{{ play.title }}</p>
-              </div>
-            </div><!-- /col -->
-            <!-- <div class="col-xs-12 col-sm-12 col-md-4 pi2containerimage">
-              <div class="pi2image">
-                <img src="" alt="" />
-              </div>
-            </div> -->
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi2container">
-              <div class="pi2">
-                <p>&quot;Our meetings sometimes tend to become routine and perhaps a little boring...</p>
-                <p>I wanted to shake things up a bit&quot;</p>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pi3container">
-              <div class="pi3">
-                <div class="circle">
-                  <p>&quot;playing<br>can buy you<br>an extra 10<br>years&quot;</p>
-                </div>
-                <p class="pi3p">Our brains need stimulation just as much as our bodies do, to stay healthy.</p>
-              </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 bookDiv">
+              <!-- <h4 class="book-title"><strong>{{ book.title }}</strong></h4>
+              <p class="book-name">- {{ book.name }}</p> -->
+              <img class="img-responsive book-img center-block" src="img/logos/pocover.png" alt="Playful Office book">
+
+            </div><!-- /bookDiv & col -->
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <h3>Playful Office&trade;</h3>
+              <p>A book that will help you change your workplace for good.</p>
+              
+
             </div><!-- /col -->
           </div><!-- /row & rowPost -->
-        </div>
+        </div><!-- /container & page-container -->
+
         <!-- <div class="banderoll"></div> -->
       </div>
     </section>
