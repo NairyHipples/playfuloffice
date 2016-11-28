@@ -349,7 +349,7 @@ textarea {
     background-image: url("../img/logos/Anfal_Shamsudeen50.jpg");
 
     /* Set a specific height */
-    height: 600px;
+    height: 700px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -358,7 +358,7 @@ textarea {
     background-size: cover;
 }
 .p1-p {
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
   font-style: italic;
   font-weight: 800;
@@ -373,7 +373,7 @@ textarea {
 .parallax2 {
 
     /* The image used */
-    background-image: url("../img/logos/270H30.jpg");
+    background-image: url("../img/logos/pexels-photo-11968520.jpg");
 
     /* Set a specific height */
     height: 500px;
@@ -426,7 +426,7 @@ textarea {
 }
 .about-section {
   position: relative;
-  top: 474px;
+  top: 574px;
 }
 .info-section {
   position: relative;
@@ -547,7 +547,7 @@ textarea {
   margin-top: 0px;
 }
 .homelogo {
-  width: 500px;
+  width: 400px;
   margin-bottom: 10px;
 }
 .img-thumbnail {
@@ -573,7 +573,6 @@ textarea {
   -ms-transform: rotate(18deg); /* IE 9 */
   -webkit-transform: rotate(18deg); /* Chrome, Safari, Opera */
   transform: rotate(18deg);
-  overflow-x: hidden;
 }
 /****** BUTTONS ******/
 .btn:focus {
@@ -604,6 +603,7 @@ textarea {
   height: 40px;
   color: #232F3E;
   background-color: #F3A847;
+  margin-bottom: 10px;
 }
 .buy1:hover {
   background-color: #BABABA;
@@ -617,6 +617,8 @@ textarea {
   height: 40px;
   color: #FFF;
   background-color: #e81121;
+  margin-bottom: 10px;
+
 }
 .buy2:hover {
   background-color: #BABABA;
@@ -707,6 +709,13 @@ textarea {
     height: 450px;
   }
 }
+@media (max-width: 1250px) {
+  .pocertified {
+    height: 220px;
+    bottom: 130px;
+    left: 350px;
+  }
+}
 @media (max-width: 1200px) {
   .nav {
     font-size: 18px;
@@ -742,7 +751,12 @@ textarea {
     position: relative;
     height: 250px;
     bottom: 130px;
-    left: 380px;
+    left: 300px;
+  }
+  .jumbotron p {
+    font-size: 14px;
+    font-weight: 800;
+    margin-top: 10px;
   }
 }
 /*@media (max-width: 1061px) {
@@ -791,7 +805,7 @@ textarea {
     position: relative;
     height: 180px;
     bottom: 170px;
-    left: 320px;
+    left: 250px;
   }
   .jumbotron {
     height: 650px;
@@ -914,21 +928,43 @@ textarea {
     box-shadow: inset 0px -7px 44px -3px rgba(0,0,0,0.75);*/
   }
   .jumbotron {
-    height: 1070px;
+    height: 810px;
   }
   .intro-section {
-    height: 1070px;
+    height: 810px;
   }
   .pocertified {
     position: relative;
     height: 180px;
     bottom: 90px;
-    left: 170px;
+    left: 120px;
+  }
+}
+@media (max-width: 697px) {
+  .jumbotron {
+    height: 830px;
+  }
+  .intro-section {
+    height: 830px;
   }
 }
 @media (max-width: 690px) {
   .bookPic {
     height: 450px;
+  }
+  .jumbotron {
+    height: 890px;
+  }
+  .intro-section {
+    height: 890px;
+  }
+}
+@media (max-width: 609px) {
+  .jumbotron {
+    height: 910px;
+  }
+  .intro-section {
+    height: 910px;
   }
 }
 @media (max-width: 556px) {
@@ -944,7 +980,7 @@ textarea {
     margin-top: 40px;
   }
   .pocertified {
-    left: 100px;
+    left: 50px;
   }
 }
 @media (max-width: 451px) {
@@ -965,6 +1001,22 @@ textarea {
     font-size: 28px;
   }
 }
+@media (max-width: 438px) {
+  .jumbotron {
+    height: 930px;
+  }
+  .intro-section {
+    height: 930px;
+  }
+}
+@media (max-width: 416px) {
+  .jumbotron {
+    height: 980px;
+  }
+  .intro-section {
+    height: 980px;
+  }
+}
 @media (max-width: 400px) {
   .navbar-brand {
     padding-top: 6px;
@@ -977,8 +1029,32 @@ textarea {
     margin-top: 70px;
   }
 }
+@media (max-width: 393px) {
+  .jumbotron {
+    height: 1020px;
+  }
+  .intro-section {
+    height: 1020px;
+  }
+}
 @media (max-width: 389px) {
   .pi1 {
     margin-top: 20px;
+  }
+  .pocertified {
+    left: 40px;
+  }
+}
+@media (max-width: 353px) {
+  .jumbotron {
+    height: 1035px;
+  }
+  .intro-section {
+    height: 1035px;
+  }
+}
+@media (max-width: 350px) {
+  .pocertified {
+    left: 0px;
   }
 }
